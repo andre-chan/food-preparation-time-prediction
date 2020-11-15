@@ -135,6 +135,8 @@ class RandomForestModel:
         plt.ylabel('(Actual - Predicted) Prep Time / s')
         plt.title('(Actual - Predicted) against Predicted Food Prep Times')
         plt.axhline(y=0, color='k', linestyle='--')
+        plt.xlim(300, 5000)
+        plt.ylim(-600, 1500)
         plt.show()
 
     @staticmethod
